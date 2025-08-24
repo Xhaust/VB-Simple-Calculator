@@ -32,6 +32,7 @@ Partial Class Form1
         btn7 = New Button()
         btn8 = New Button()
         btn9 = New Button()
+        TextBox1 = New TextBox()
         SuspendLayout()
         ' 
         ' btn0
@@ -124,11 +125,19 @@ Partial Class Form1
         btn9.Text = "9"
         btn9.UseVisualStyleBackColor = True
         ' 
+        ' TextBox1
+        ' 
+        TextBox1.Location = New Point(12, 12)
+        TextBox1.Name = "TextBox1"
+        TextBox1.Size = New Size(160, 23)
+        TextBox1.TabIndex = 10
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(184, 261)
+        Controls.Add(TextBox1)
         Controls.Add(btn9)
         Controls.Add(btn8)
         Controls.Add(btn7)
@@ -142,6 +151,7 @@ Partial Class Form1
         Name = "Form1"
         Text = "Form1"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
 
     Friend WithEvents btn0 As Button
@@ -154,5 +164,6 @@ Partial Class Form1
     Friend WithEvents btn7 As Button
     Friend WithEvents btn8 As Button
     Friend WithEvents btn9 As Button
+    Friend WithEvents TextBox1 As TextBox
 
 End Class
