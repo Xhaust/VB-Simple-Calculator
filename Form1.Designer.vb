@@ -33,6 +33,7 @@ Partial Class Form1
         btn8 = New Button()
         btn9 = New Button()
         TextBox1 = New TextBox()
+        btnDot = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -132,11 +133,21 @@ Partial Class Form1
         TextBox1.Size = New Size(160, 23)
         TextBox1.TabIndex = 10
         ' 
+        ' btnDot
+        ' 
+        btnDot.Location = New Point(74, 224)
+        btnDot.Name = "btnDot"
+        btnDot.Size = New Size(25, 25)
+        btnDot.TabIndex = 11
+        btnDot.Text = "."
+        btnDot.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(184, 261)
+        Controls.Add(btnDot)
         Controls.Add(TextBox1)
         Controls.Add(btn9)
         Controls.Add(btn8)
@@ -165,5 +176,6 @@ Partial Class Form1
     Friend WithEvents btn8 As Button
     Friend WithEvents btn9 As Button
     Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents btnDot As Button
 
 End Class
