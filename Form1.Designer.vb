@@ -34,6 +34,9 @@ Partial Class Form1
         btn9 = New Button()
         TextBox1 = New TextBox()
         btnDot = New Button()
+        btnSubtract = New Button()
+        btnAdd = New Button()
+        btnEqual = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -142,11 +145,41 @@ Partial Class Form1
         btnDot.Text = "."
         btnDot.UseVisualStyleBackColor = True
         ' 
+        ' btnSubtract
+        ' 
+        btnSubtract.Location = New Point(105, 193)
+        btnSubtract.Name = "btnSubtract"
+        btnSubtract.Size = New Size(25, 25)
+        btnSubtract.TabIndex = 12
+        btnSubtract.Text = "-"
+        btnSubtract.UseVisualStyleBackColor = True
+        ' 
+        ' btnAdd
+        ' 
+        btnAdd.Location = New Point(105, 224)
+        btnAdd.Name = "btnAdd"
+        btnAdd.Size = New Size(25, 25)
+        btnAdd.TabIndex = 13
+        btnAdd.Text = "+"
+        btnAdd.UseVisualStyleBackColor = True
+        ' 
+        ' btnEqual
+        ' 
+        btnEqual.Location = New Point(136, 193)
+        btnEqual.Name = "btnEqual"
+        btnEqual.Size = New Size(25, 56)
+        btnEqual.TabIndex = 14
+        btnEqual.Text = "="
+        btnEqual.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(184, 261)
+        ClientSize = New Size(173, 261)
+        Controls.Add(btnEqual)
+        Controls.Add(btnAdd)
+        Controls.Add(btnSubtract)
         Controls.Add(btnDot)
         Controls.Add(TextBox1)
         Controls.Add(btn9)
@@ -177,5 +210,8 @@ Partial Class Form1
     Friend WithEvents btn9 As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents btnDot As Button
+    Friend WithEvents btnSubtract As Button
+    Friend WithEvents btnAdd As Button
+    Friend WithEvents btnEqual As Button
 
 End Class
