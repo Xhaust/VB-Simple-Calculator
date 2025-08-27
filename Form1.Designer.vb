@@ -133,7 +133,7 @@ Partial Class Form1
         ' 
         TextBox1.Location = New Point(12, 12)
         TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(160, 23)
+        TextBox1.Size = New Size(149, 23)
         TextBox1.TabIndex = 10
         ' 
         ' btnDot
