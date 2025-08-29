@@ -32,7 +32,7 @@ Partial Class Form1
         btn7 = New Button()
         btn8 = New Button()
         btn9 = New Button()
-        TextBox1 = New TextBox()
+        txtDisplay = New TextBox()
         btnDot = New Button()
         btnSubtract = New Button()
         btnAdd = New Button()
@@ -129,12 +129,12 @@ Partial Class Form1
         btn9.Text = "9"
         btn9.UseVisualStyleBackColor = True
         ' 
-        ' TextBox1
+        ' txtDisplay
         ' 
-        TextBox1.Location = New Point(12, 12)
-        TextBox1.Name = "TextBox1"
-        TextBox1.Size = New Size(149, 23)
-        TextBox1.TabIndex = 10
+        txtDisplay.Location = New Point(12, 12)
+        txtDisplay.Name = "txtDisplay"
+        txtDisplay.Size = New Size(149, 23)
+        txtDisplay.TabIndex = 10
         ' 
         ' btnDot
         ' 
@@ -181,7 +181,7 @@ Partial Class Form1
         Controls.Add(btnAdd)
         Controls.Add(btnSubtract)
         Controls.Add(btnDot)
-        Controls.Add(TextBox1)
+        Controls.Add(txtDisplay)
         Controls.Add(btn9)
         Controls.Add(btn8)
         Controls.Add(btn7)
@@ -208,7 +208,7 @@ Partial Class Form1
     Friend WithEvents btn7 As Button
     Friend WithEvents btn8 As Button
     Friend WithEvents btn9 As Button
-    Friend WithEvents TextBox1 As TextBox
+    Friend WithEvents txtDisplay As TextBox
     Friend WithEvents btnDot As Button
     Friend WithEvents btnSubtract As Button
     Friend WithEvents btnAdd As Button
