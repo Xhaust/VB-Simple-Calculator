@@ -13,4 +13,16 @@
         firstValue = Val(txtDisplay.Text)
         txtDisplay.Text = ""
     End Sub
+
+    Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
+        If operatorClicked = "+" Then
+            secondValue = Val(txtDisplay.Text)
+            result = firstValue + secondValue
+            txtDisplay.Text = result
+        ElseIf operatorClicked = "-" Then
+            secondValue = Val(txtDisplay.Text)
+            result = firstValue - secondValue
+            txtDisplay.Text = result
+        End If
+    End Sub
 End Class
