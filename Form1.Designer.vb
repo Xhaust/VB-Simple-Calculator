@@ -37,6 +37,7 @@ Partial Class Form1
         btnSubtract = New Button()
         btnAdd = New Button()
         btnEqual = New Button()
+        btnClear = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -172,11 +173,21 @@ Partial Class Form1
         btnEqual.Text = "="
         btnEqual.UseVisualStyleBackColor = True
         ' 
+        ' btnClear
+        ' 
+        btnClear.Location = New Point(74, 100)
+        btnClear.Name = "btnClear"
+        btnClear.Size = New Size(25, 25)
+        btnClear.TabIndex = 15
+        btnClear.Text = "C"
+        btnClear.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(btnClear)
         Controls.Add(btnEqual)
         Controls.Add(btnAdd)
         Controls.Add(btnSubtract)
@@ -213,5 +224,6 @@ Partial Class Form1
     Friend WithEvents btnSubtract As Button
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnEqual As Button
+    Friend WithEvents btnClear As Button
 
 End Class
