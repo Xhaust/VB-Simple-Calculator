@@ -41,6 +41,7 @@ Partial Class Form1
         btnMultiply = New Button()
         btnDivide = New Button()
         btnErase = New Button()
+        btnPlusMinus = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -212,11 +213,21 @@ Partial Class Form1
         btnErase.Text = "⌫"
         btnErase.UseVisualStyleBackColor = True
         ' 
+        ' btnPlusMinus
+        ' 
+        btnPlusMinus.Location = New Point(43, 100)
+        btnPlusMinus.Name = "btnPlusMinus"
+        btnPlusMinus.Size = New Size(25, 25)
+        btnPlusMinus.TabIndex = 19
+        btnPlusMinus.Text = "±"
+        btnPlusMinus.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(btnPlusMinus)
         Controls.Add(btnErase)
         Controls.Add(btnDivide)
         Controls.Add(btnMultiply)
@@ -261,5 +272,6 @@ Partial Class Form1
     Friend WithEvents btnMultiply As Button
     Friend WithEvents btnDivide As Button
     Friend WithEvents btnErase As Button
+    Friend WithEvents btnPlusMinus As Button
 
 End Class
