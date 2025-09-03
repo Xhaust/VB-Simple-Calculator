@@ -40,6 +40,7 @@ Partial Class Form1
         btnClear = New Button()
         btnMultiply = New Button()
         btnDivide = New Button()
+        btnErase = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -179,9 +180,9 @@ Partial Class Form1
         ' 
         btnClear.Location = New Point(74, 100)
         btnClear.Name = "btnClear"
-        btnClear.Size = New Size(25, 25)
+        btnClear.Size = New Size(56, 25)
         btnClear.TabIndex = 15
-        btnClear.Text = "C"
+        btnClear.Text = "AC"
         btnClear.UseVisualStyleBackColor = True
         ' 
         ' btnMultiply
@@ -202,11 +203,21 @@ Partial Class Form1
         btnDivide.Text = "/"
         btnDivide.UseVisualStyleBackColor = True
         ' 
+        ' btnErase
+        ' 
+        btnErase.Location = New Point(12, 100)
+        btnErase.Name = "btnErase"
+        btnErase.Size = New Size(25, 25)
+        btnErase.TabIndex = 18
+        btnErase.Text = "⌫"
+        btnErase.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(btnErase)
         Controls.Add(btnDivide)
         Controls.Add(btnMultiply)
         Controls.Add(btnClear)
@@ -249,5 +260,6 @@ Partial Class Form1
     Friend WithEvents btnClear As Button
     Friend WithEvents btnMultiply As Button
     Friend WithEvents btnDivide As Button
+    Friend WithEvents btnErase As Button
 
 End Class

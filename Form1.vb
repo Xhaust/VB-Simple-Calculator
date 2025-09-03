@@ -11,4 +11,8 @@
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
         txtDisplay.Text = ""
     End Sub
+
+    Private Sub btnErase_Click(sender As Object, e As EventArgs) Handles btnErase.Click
+        txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1)
+    End Sub
 End Class
