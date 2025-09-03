@@ -38,6 +38,8 @@ Partial Class Form1
         btnAdd = New Button()
         btnEqual = New Button()
         btnClear = New Button()
+        btnMultiply = New Button()
+        btnDivide = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -182,11 +184,31 @@ Partial Class Form1
         btnClear.Text = "C"
         btnClear.UseVisualStyleBackColor = True
         ' 
+        ' btnMultiply
+        ' 
+        btnMultiply.Location = New Point(105, 162)
+        btnMultiply.Name = "btnMultiply"
+        btnMultiply.Size = New Size(25, 25)
+        btnMultiply.TabIndex = 16
+        btnMultiply.Text = "*"
+        btnMultiply.UseVisualStyleBackColor = True
+        ' 
+        ' btnDivide
+        ' 
+        btnDivide.Location = New Point(105, 131)
+        btnDivide.Name = "btnDivide"
+        btnDivide.Size = New Size(25, 25)
+        btnDivide.TabIndex = 17
+        btnDivide.Text = "/"
+        btnDivide.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(btnDivide)
+        Controls.Add(btnMultiply)
         Controls.Add(btnClear)
         Controls.Add(btnEqual)
         Controls.Add(btnAdd)
@@ -225,5 +247,7 @@ Partial Class Form1
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnEqual As Button
     Friend WithEvents btnClear As Button
+    Friend WithEvents btnMultiply As Button
+    Friend WithEvents btnDivide As Button
 
 End Class
