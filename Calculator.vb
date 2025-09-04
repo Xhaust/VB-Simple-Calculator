@@ -17,6 +17,11 @@
     End Sub
 
     Private Sub btnPlusMinus_Click(sender As Object, e As EventArgs) Handles btnPlusMinus.Click
-        txtDisplay.Text = (-Convert.ToDouble(txtDisplay.Text)).ToString()
+        If txtDisplay.Text.Contains("(") Or txtDisplay.Text.Contains(")") Or txtDisplay.Text.Contains("+") Or txtDisplay.Text.Contains("-") Or txtDisplay.Text.Contains("*") Or txtDisplay.Text.Contains("/") Or txtDisplay.Text.Contains("^") Then
+            MsgBox("This function cannot be used with expressions or brackets!")
+        Else
+            txtDisplay.Text = (-Convert.ToDouble(txtDisplay.Text)).ToString()
+        End If
+
     End Sub
 End Class
