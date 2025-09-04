@@ -42,6 +42,8 @@ Partial Class Form1
         btnDivide = New Button()
         btnErase = New Button()
         btnPlusMinus = New Button()
+        btnStartBracket = New Button()
+        btnEndBracket = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -179,7 +181,7 @@ Partial Class Form1
         ' 
         ' btnClear
         ' 
-        btnClear.Location = New Point(74, 100)
+        btnClear.Location = New Point(105, 100)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(56, 25)
         btnClear.TabIndex = 15
@@ -215,18 +217,38 @@ Partial Class Form1
         ' 
         ' btnPlusMinus
         ' 
-        btnPlusMinus.Location = New Point(43, 100)
+        btnPlusMinus.Location = New Point(136, 131)
         btnPlusMinus.Name = "btnPlusMinus"
         btnPlusMinus.Size = New Size(25, 25)
         btnPlusMinus.TabIndex = 19
         btnPlusMinus.Text = "±"
         btnPlusMinus.UseVisualStyleBackColor = True
         ' 
+        ' btnStartBracket
+        ' 
+        btnStartBracket.Location = New Point(43, 100)
+        btnStartBracket.Name = "btnStartBracket"
+        btnStartBracket.Size = New Size(25, 25)
+        btnStartBracket.TabIndex = 20
+        btnStartBracket.Text = "("
+        btnStartBracket.UseVisualStyleBackColor = True
+        ' 
+        ' btnEndBracket
+        ' 
+        btnEndBracket.Location = New Point(74, 100)
+        btnEndBracket.Name = "btnEndBracket"
+        btnEndBracket.Size = New Size(25, 25)
+        btnEndBracket.TabIndex = 21
+        btnEndBracket.Text = ")"
+        btnEndBracket.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(btnEndBracket)
+        Controls.Add(btnStartBracket)
         Controls.Add(btnPlusMinus)
         Controls.Add(btnErase)
         Controls.Add(btnDivide)
@@ -273,5 +295,7 @@ Partial Class Form1
     Friend WithEvents btnDivide As Button
     Friend WithEvents btnErase As Button
     Friend WithEvents btnPlusMinus As Button
+    Friend WithEvents btnStartBracket As Button
+    Friend WithEvents btnEndBracket As Button
 
 End Class
