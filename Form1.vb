@@ -1,5 +1,5 @@
 ﻿Public Class Form1
-    Private Sub btnClick(sender As Object, e As EventArgs) Handles btn7.Click, btn8.Click, btn9.Click, btn6.Click, btn5.Click, btn4.Click, btn1.Click, btn2.Click, btn0.Click, btnDot.Click, btn3.Click, btnSubtract.Click, btnAdd.Click, btnMultiply.Click, btnDivide.Click, btnStartBracket.Click, btnEndBracket.Click
+    Private Sub btnClick(sender As Object, e As EventArgs) Handles btn7.Click, btn8.Click, btn9.Click, btn6.Click, btn5.Click, btn4.Click, btn1.Click, btn2.Click, btn0.Click, btnDot.Click, btn3.Click, btnSubtract.Click, btnAdd.Click, btnMultiply.Click, btnDivide.Click, btnStartBracket.Click, btnEndBracket.Click, btnExponentiation.Click
         Dim btn As Button = CType(sender, Button)
         txtDisplay.Text &= btn.Text
     End Sub

@@ -44,6 +44,7 @@ Partial Class Form1
         btnPlusMinus = New Button()
         btnStartBracket = New Button()
         btnEndBracket = New Button()
+        btnExponentiation = New Button()
         SuspendLayout()
         ' 
         ' btn0
@@ -242,11 +243,21 @@ Partial Class Form1
         btnEndBracket.Text = ")"
         btnEndBracket.UseVisualStyleBackColor = True
         ' 
+        ' btnExponentiation
+        ' 
+        btnExponentiation.Location = New Point(136, 162)
+        btnExponentiation.Name = "btnExponentiation"
+        btnExponentiation.Size = New Size(25, 25)
+        btnExponentiation.TabIndex = 22
+        btnExponentiation.Text = "^"
+        btnExponentiation.UseVisualStyleBackColor = True
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(btnExponentiation)
         Controls.Add(btnEndBracket)
         Controls.Add(btnStartBracket)
         Controls.Add(btnPlusMinus)
@@ -297,5 +308,6 @@ Partial Class Form1
     Friend WithEvents btnPlusMinus As Button
     Friend WithEvents btnStartBracket As Button
     Friend WithEvents btnEndBracket As Button
+    Friend WithEvents btnExponentiation As Button
 
 End Class
