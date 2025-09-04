@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
-Partial Class Form1
+Partial Class Calculator
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -252,7 +252,7 @@ Partial Class Form1
         btnExponentiation.Text = "^"
         btnExponentiation.UseVisualStyleBackColor = True
         ' 
-        ' Form1
+        ' Calculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
@@ -280,8 +280,8 @@ Partial Class Form1
         Controls.Add(btn2)
         Controls.Add(btn1)
         Controls.Add(btn0)
-        Name = "Form1"
-        Text = "Form1"
+        Name = "Calculator"
+        Text = "Calculator"
         ResumeLayout(False)
         PerformLayout()
     End Sub
