@@ -5,7 +5,11 @@
     End Sub
 
     Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
-        txtDisplay.Text = New DataTable().Compute(txtDisplay.Text, Nothing).ToString()
+        Try
+            txtDisplay.Text = New DataTable().Compute(txtDisplay.Text, Nothing).ToString()
+        Catch ex As Exception
+            MsgBox("Invalid Expression!")
+        End Try
     End Sub
 
     Private Sub btnClear_Click(sender As Object, e As EventArgs) Handles btnClear.Click
