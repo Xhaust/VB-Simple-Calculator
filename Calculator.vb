@@ -6,6 +6,7 @@
 
     Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
         Try
+            previousTxtDisplay.Text = txtDisplay.Text
             txtDisplay.Text = New DataTable().Compute(txtDisplay.Text, Nothing).ToString()
         Catch ex As Exception
             MsgBox("Invalid Expression!")

@@ -45,6 +45,7 @@ Partial Class Calculator
         btnStartBracket = New Button()
         btnEndBracket = New Button()
         btnExponentiation = New Button()
+        previousTxtDisplay = New TextBox()
         SuspendLayout()
         ' 
         ' btn0
@@ -139,7 +140,7 @@ Partial Class Calculator
         ' 
         ' txtDisplay
         ' 
-        txtDisplay.Location = New Point(12, 12)
+        txtDisplay.Location = New Point(12, 41)
         txtDisplay.Name = "txtDisplay"
         txtDisplay.Size = New Size(149, 23)
         txtDisplay.TabIndex = 10
@@ -252,11 +253,20 @@ Partial Class Calculator
         btnExponentiation.Text = "^"
         btnExponentiation.UseVisualStyleBackColor = True
         ' 
+        ' previousTxtDisplay
+        ' 
+        previousTxtDisplay.ForeColor = SystemColors.GrayText
+        previousTxtDisplay.Location = New Point(12, 12)
+        previousTxtDisplay.Name = "previousTxtDisplay"
+        previousTxtDisplay.Size = New Size(149, 23)
+        previousTxtDisplay.TabIndex = 23
+        ' 
         ' Calculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(173, 261)
+        Controls.Add(previousTxtDisplay)
         Controls.Add(btnExponentiation)
         Controls.Add(btnEndBracket)
         Controls.Add(btnStartBracket)
@@ -309,5 +319,6 @@ Partial Class Calculator
     Friend WithEvents btnStartBracket As Button
     Friend WithEvents btnEndBracket As Button
     Friend WithEvents btnExponentiation As Button
+    Friend WithEvents previousTxtDisplay As TextBox
 
 End Class
