@@ -18,7 +18,10 @@
     End Sub
 
     Private Sub btnErase_Click(sender As Object, e As EventArgs) Handles btnErase.Click
-        txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1)
+        If txtDisplay.Text.Length > 0 Then
+            txtDisplay.Text = txtDisplay.Text.Substring(0, txtDisplay.Text.Length - 1)
+        End If
+
     End Sub
 
     Private Sub btnPlusMinus_Click(sender As Object, e As EventArgs) Handles btnPlusMinus.Click
