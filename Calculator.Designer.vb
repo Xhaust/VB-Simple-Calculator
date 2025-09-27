@@ -291,6 +291,8 @@ Partial Class Calculator
         Controls.Add(btn2)
         Controls.Add(btn1)
         Controls.Add(btn0)
+        FormBorderStyle = FormBorderStyle.FixedSingle
+        MaximizeBox = False
         Name = "Calculator"
         Text = "Calculator"
         ResumeLayout(False)
