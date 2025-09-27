@@ -50,7 +50,7 @@ Partial Class Calculator
         ' 
         ' btn0
         ' 
-        btn0.Location = New Point(12, 224)
+        btn0.Location = New Point(12, 194)
         btn0.Name = "btn0"
         btn0.Size = New Size(56, 25)
         btn0.TabIndex = 0
@@ -59,7 +59,7 @@ Partial Class Calculator
         ' 
         ' btn1
         ' 
-        btn1.Location = New Point(12, 193)
+        btn1.Location = New Point(12, 163)
         btn1.Name = "btn1"
         btn1.Size = New Size(25, 25)
         btn1.TabIndex = 1
@@ -68,7 +68,7 @@ Partial Class Calculator
         ' 
         ' btn2
         ' 
-        btn2.Location = New Point(43, 193)
+        btn2.Location = New Point(43, 163)
         btn2.Name = "btn2"
         btn2.Size = New Size(25, 25)
         btn2.TabIndex = 2
@@ -77,7 +77,7 @@ Partial Class Calculator
         ' 
         ' btn3
         ' 
-        btn3.Location = New Point(74, 193)
+        btn3.Location = New Point(74, 163)
         btn3.Name = "btn3"
         btn3.Size = New Size(25, 25)
         btn3.TabIndex = 3
@@ -86,7 +86,7 @@ Partial Class Calculator
         ' 
         ' btn4
         ' 
-        btn4.Location = New Point(12, 162)
+        btn4.Location = New Point(12, 132)
         btn4.Name = "btn4"
         btn4.Size = New Size(25, 25)
         btn4.TabIndex = 4
@@ -95,7 +95,7 @@ Partial Class Calculator
         ' 
         ' btn5
         ' 
-        btn5.Location = New Point(43, 162)
+        btn5.Location = New Point(43, 132)
         btn5.Name = "btn5"
         btn5.Size = New Size(25, 25)
         btn5.TabIndex = 5
@@ -104,7 +104,7 @@ Partial Class Calculator
         ' 
         ' btn6
         ' 
-        btn6.Location = New Point(74, 162)
+        btn6.Location = New Point(74, 132)
         btn6.Name = "btn6"
         btn6.Size = New Size(25, 25)
         btn6.TabIndex = 6
@@ -113,7 +113,7 @@ Partial Class Calculator
         ' 
         ' btn7
         ' 
-        btn7.Location = New Point(12, 131)
+        btn7.Location = New Point(12, 101)
         btn7.Name = "btn7"
         btn7.Size = New Size(25, 25)
         btn7.TabIndex = 7
@@ -122,7 +122,7 @@ Partial Class Calculator
         ' 
         ' btn8
         ' 
-        btn8.Location = New Point(43, 131)
+        btn8.Location = New Point(43, 101)
         btn8.Name = "btn8"
         btn8.Size = New Size(25, 25)
         btn8.TabIndex = 8
@@ -131,7 +131,7 @@ Partial Class Calculator
         ' 
         ' btn9
         ' 
-        btn9.Location = New Point(74, 131)
+        btn9.Location = New Point(74, 101)
         btn9.Name = "btn9"
         btn9.Size = New Size(25, 25)
         btn9.TabIndex = 9
@@ -147,7 +147,7 @@ Partial Class Calculator
         ' 
         ' btnDot
         ' 
-        btnDot.Location = New Point(74, 224)
+        btnDot.Location = New Point(74, 194)
         btnDot.Name = "btnDot"
         btnDot.Size = New Size(25, 25)
         btnDot.TabIndex = 11
@@ -156,7 +156,7 @@ Partial Class Calculator
         ' 
         ' btnSubtract
         ' 
-        btnSubtract.Location = New Point(105, 193)
+        btnSubtract.Location = New Point(105, 163)
         btnSubtract.Name = "btnSubtract"
         btnSubtract.Size = New Size(25, 25)
         btnSubtract.TabIndex = 12
@@ -165,7 +165,7 @@ Partial Class Calculator
         ' 
         ' btnAdd
         ' 
-        btnAdd.Location = New Point(105, 224)
+        btnAdd.Location = New Point(105, 194)
         btnAdd.Name = "btnAdd"
         btnAdd.Size = New Size(25, 25)
         btnAdd.TabIndex = 13
@@ -174,7 +174,7 @@ Partial Class Calculator
         ' 
         ' btnEqual
         ' 
-        btnEqual.Location = New Point(136, 193)
+        btnEqual.Location = New Point(136, 163)
         btnEqual.Name = "btnEqual"
         btnEqual.Size = New Size(25, 56)
         btnEqual.TabIndex = 14
@@ -183,7 +183,7 @@ Partial Class Calculator
         ' 
         ' btnClear
         ' 
-        btnClear.Location = New Point(105, 100)
+        btnClear.Location = New Point(105, 70)
         btnClear.Name = "btnClear"
         btnClear.Size = New Size(56, 25)
         btnClear.TabIndex = 15
@@ -192,7 +192,7 @@ Partial Class Calculator
         ' 
         ' btnMultiply
         ' 
-        btnMultiply.Location = New Point(105, 162)
+        btnMultiply.Location = New Point(105, 132)
         btnMultiply.Name = "btnMultiply"
         btnMultiply.Size = New Size(25, 25)
         btnMultiply.TabIndex = 16
@@ -201,7 +201,7 @@ Partial Class Calculator
         ' 
         ' btnDivide
         ' 
-        btnDivide.Location = New Point(105, 131)
+        btnDivide.Location = New Point(105, 101)
         btnDivide.Name = "btnDivide"
         btnDivide.Size = New Size(25, 25)
         btnDivide.TabIndex = 17
@@ -210,7 +210,7 @@ Partial Class Calculator
         ' 
         ' btnErase
         ' 
-        btnErase.Location = New Point(12, 100)
+        btnErase.Location = New Point(12, 70)
         btnErase.Name = "btnErase"
         btnErase.Size = New Size(25, 25)
         btnErase.TabIndex = 18
@@ -219,7 +219,7 @@ Partial Class Calculator
         ' 
         ' btnPlusMinus
         ' 
-        btnPlusMinus.Location = New Point(136, 131)
+        btnPlusMinus.Location = New Point(136, 101)
         btnPlusMinus.Name = "btnPlusMinus"
         btnPlusMinus.Size = New Size(25, 25)
         btnPlusMinus.TabIndex = 19
@@ -228,7 +228,7 @@ Partial Class Calculator
         ' 
         ' btnStartBracket
         ' 
-        btnStartBracket.Location = New Point(43, 100)
+        btnStartBracket.Location = New Point(43, 70)
         btnStartBracket.Name = "btnStartBracket"
         btnStartBracket.Size = New Size(25, 25)
         btnStartBracket.TabIndex = 20
@@ -237,7 +237,7 @@ Partial Class Calculator
         ' 
         ' btnEndBracket
         ' 
-        btnEndBracket.Location = New Point(74, 100)
+        btnEndBracket.Location = New Point(74, 70)
         btnEndBracket.Name = "btnEndBracket"
         btnEndBracket.Size = New Size(25, 25)
         btnEndBracket.TabIndex = 21
@@ -246,7 +246,7 @@ Partial Class Calculator
         ' 
         ' btnExponentiation
         ' 
-        btnExponentiation.Location = New Point(136, 162)
+        btnExponentiation.Location = New Point(136, 132)
         btnExponentiation.Name = "btnExponentiation"
         btnExponentiation.Size = New Size(25, 25)
         btnExponentiation.TabIndex = 22
@@ -266,7 +266,7 @@ Partial Class Calculator
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(173, 261)
+        ClientSize = New Size(173, 231)
         Controls.Add(previousTxtDisplay)
         Controls.Add(btnExponentiation)
         Controls.Add(btnEndBracket)
