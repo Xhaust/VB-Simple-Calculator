@@ -255,10 +255,11 @@ Partial Class Calculator
         ' 
         ' previousTxtDisplay
         ' 
+        previousTxtDisplay.BorderStyle = BorderStyle.None
         previousTxtDisplay.ForeColor = SystemColors.GrayText
         previousTxtDisplay.Location = New Point(12, 12)
         previousTxtDisplay.Name = "previousTxtDisplay"
-        previousTxtDisplay.Size = New Size(149, 23)
+        previousTxtDisplay.Size = New Size(149, 16)
         previousTxtDisplay.TabIndex = 23
         ' 
         ' Calculator

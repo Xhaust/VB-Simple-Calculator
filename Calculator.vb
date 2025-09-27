@@ -6,6 +6,15 @@
 
     Private Sub btnEqual_Click(sender As Object, e As EventArgs) Handles btnEqual.Click
         Try
+            ' Use Math.Pow for exponentiation, since DataTable.Compute does not support it
+            If txtDisplay.Text.Contains("^") Then
+                Dim parts As String() = txtDisplay.Text.Split("^"c)
+                If parts.Length = 2 Then
+                    Dim base As Double = Convert.ToDouble(parts(0))
+                    Dim exponent As Double = Convert.ToDouble(parts(1))
+                    txtDisplay.Text = Math.Pow(base, exponent).ToString()
+                End If
+            End If
             previousTxtDisplay.Text = txtDisplay.Text
             txtDisplay.Text = New DataTable().Compute(txtDisplay.Text, Nothing).ToString()
         Catch ex As Exception
